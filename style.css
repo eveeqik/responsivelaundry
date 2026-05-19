@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  width: 100vw;
+  height: 90px;
+  background: #ffffff;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 90px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+ul li {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+nav p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.username {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    color: #00A3F5;
+    height: 50px;
+    width: 90px;
+    border-radius: 11px;
+    border: none;
+    background: #CFEFFF;
+    cursor: pointer;
+}
+
+.herosection {
+  display: flex;
+  flex-direction: row;
+  background: #FCFCFC;
+}
+
+.leftside {
+  height: 87vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0px 95px 0px 140px;
+}
+
+.leftside h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+    position: relative;
+    bottom: 40px;
+    line-height: 60px;
+    color: #4e4e4e;
+}
+
+.leftside p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    position: relative;
+    bottom: 50px;
+    color: #9f9f9f;
+}
+
+.leftside span {
+  color: #00A3F5;
+}
+
+.leftside button {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #ffffff;
+    height: 70px;
+    width: 300px;
+    border-radius: 17px;
+    border: none;
+    background: #00A3F5;
+    cursor: pointer;
+}
+
+.rightside {
+  height: 87vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*standard mobiles*/
+@media (min-width: 320px) and (max-width: 768px) {
+  .herosection {
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav p {
+    font-size: 20px;
+    position: relative;
+    right: 50px;
+  }
+
+  nav .username {
+    position: relative;
+    left: 60px;
+  }
+
+  .leftside, .rightside {
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+  }
+
+  .leftside h1 {
+    padding-top: 70px;
+    font-size: 38px;
+    line-height: 36px;
+    bottom: 20px;
+    text-align: center;
+  }
+
+  .leftside p {
+    font-size: 16px;
+    bottom: 30px;
+    text-align: center;
+  }
+
+  .leftside button {
+    width: 300px;
+    height: 70px;
+    font-size: 16px;
+    position: relative;
+    left: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .herosection {
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav p {
+    font-size: 20px;
+    position: relative;
+    right: 50px;
+  }
+
+  nav .username {
+    position: relative;
+    left: 60px;
+  }
+
+.rightside {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.rightside img {
+  height: 320px;
+  width: auto;
+  position: relative;
+  bottom: 500px;
+  left: 190px;
+  }
+
+  .leftside{
+    width: 50vw;
+    height: auto;
+    padding: 0px 0px 0px 15px;
+  }
+
+  .leftside h1 {
+    padding-top: 90px;
+    font-size: 38px;
+    line-height: 36px;
+    bottom: 20px;
+    text-align: left;
+  }
+
+  .leftside p {
+    font-size: 16px;
+    bottom: 30px;
+    text-align: left;
+  }
+
+  .leftside button {
+    width: 300px;
+    height: 70px;
+    font-size: 16px;
+    position: relative;
+    left: 0px;
+   }
+}
